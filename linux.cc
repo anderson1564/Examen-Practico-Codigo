@@ -40,7 +40,8 @@ void get_memory_info(struct system & sys)
 	double mem_freeD = (double)mem_freeI / (double)megabyte;
 	double mem_use = ((double)(mem_totalI - mem_freeI) / (double)mem_totalI) * 100;
 	
-	sys.mem_use = "Memoria RAM:\n\tMemoria total: " + to_str(mem_totalD) + "GB.\n" + 				"\tMemoria libre: " + to_str(mem_freeD) + "GB.\n" +
+	sys.mem_use = "Memoria RAM:\n\tMemoria total: " + to_str(mem_totalD) + "GB.\n" + 				
+			"\tMemoria libre: " + to_str(mem_freeD) + "GB.\n" +
 			"\tPorcentaje de uso de la memoria: " + to_str(mem_use) + "%\n"; 
 
 	fclose(f);
